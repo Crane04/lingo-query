@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="sender">
+                <textarea placeholder="Enter Text..."></textarea>
+                <div class="sender-options">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+ <i class="fa fa-volume-up" aria-hidden="true"></i>
+ <select>
+
+    <option value="yo">Yoruba</option>
+    <option value="ig">Igbo</option>
+    <option value="ha">Hausa</option>
+    <option value="en" selected>English</option>
+</select>
+                </div>
+            </div>
+            <i class="fa fa-exchange" aria-hidden="true"></i>
+            <div class="receiver">
+                <textarea placeholder="Translate..." readonly disabled></textarea>
+                <div class="receiver-options">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+ <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    <select>
+                        <option value="yo" selected>Yoruba</option>
+                        <option value="ig">Igbo</option>
+                        <option value="ha">Hausa</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div><br>
+            <button>Translate</button>
+        </div>
+        </div>
+    </div>
+    <!-- <script src="languages.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

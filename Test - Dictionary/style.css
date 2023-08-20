@@ -1,0 +1,112 @@
+body{
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+            
+    input{
+        padding: 10px;
+        font-family: inherit;
+        width: 250px;
+    }
+    .inputs h3{
+        display: none;
+    }
+    button{
+        padding: 15px;
+        background-color: #eee;
+        box-shadow: 1px 1px 1px 1px black;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    button:hover{
+        background-color: #ddd;
+    }
+    h1{
+        text-align: center;
+    }
+    .inputs{
+        text-align: center;
+    }
+
+    .container{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+    height: fit-content;
+    width: 80%;
+    }
+
+    .result{
+        margin-top: 40px;
+        visibility:hidden;
+    }
+    .result div{
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5);
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        word-wrap:break-word;
+    }
+    .audio{
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow:none;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: right;
+        margin-top: -15px;
+    }
+
+   .fa-volume-up{
+    font-size:40px;
+    height: 40px;
+    padding: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5);
+    border-radius: 50%;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+   }
+
+   @media(max-width:660px){
+    .result div{
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5);
+        width:80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .audio{
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow:none;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: right;
+        margin-top: -15px;
+    }
+    .inputs{
+        width: 100%;
+    }
+    input{
+        width: 50%;
+    }
+    button{
+        width: fit-content;
+
+    }
+   }

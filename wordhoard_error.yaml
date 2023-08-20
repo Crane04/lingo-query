@@ -1,0 +1,32 @@
+2023-08-20 01:46:11:wordhoard.utilities.request_html:ERROR: A ConnectionError has occurred when requesting https://www.wordhippo.com/what-is/the-opposite-of/one.html
+2023-08-20 01:46:11:wordhoard.utilities.request_html:ERROR: A ConnectionError has occurred when requesting https://www.thesaurus.com/browse/one
+2023-08-20 01:46:11:wordhoard.utilities.request_html:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\utilities\request_html.py", line 102, in get_website_html
+    response = self._requests_retry_session().get(self._url_to_scrape,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+
+2023-08-20 01:46:11:wordhoard.utilities.request_html:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\utilities\request_html.py", line 102, in get_website_html
+    response = self._requests_retry_session().get(self._url_to_scrape,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+
