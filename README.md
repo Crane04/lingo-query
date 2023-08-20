@@ -50,7 +50,7 @@ python manage.py runserver
 ```
 
 - **Access the Website:**
-  - Open your web browser and go to http://localhost:8000 to access the website.
+  - Open your web browser and go to http://127.0.0.1:8000 to access the website.
 
 - **Explore API and Translator:**
   - Use the website to explore the Dictionary API and Translator functionalities.
