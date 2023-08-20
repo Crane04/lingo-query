@@ -54,6 +54,8 @@ python manage.py runserver
 
 - **Explore API and Translator:**
   - Use the website to explore the Dictionary API and Translator functionalities.
+      - /dictionary/?word={word} - Dictionary
+      - /translator/?from={from_lang}&to={to_lang}&text={sentence}
  
 ## Contributing
 - **We welcome contributions to this project! To contribute:**
