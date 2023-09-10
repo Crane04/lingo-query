@@ -30,3 +30,243 @@
   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\requests\adapters.py", line 519, in send
     raise ConnectionError(e, request=request)
 
+2023-08-21 21:49:28:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word one
+2023-08-21 21:49:38:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-08-21 21:49:38:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-08-21 21:49:38:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/one
+2023-08-21 21:49:38:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-08-21 21:49:39:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-08-21 21:49:39:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-08-21 21:49:40:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-08-21 21:49:40:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-08-21 22:06:11:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word one
+2023-08-21 22:06:12:wordhoard.antonyms:ERROR: A TypeError occurred in the following code segment:
+2023-08-21 22:06:12:wordhoard.antonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\antonyms.py", line 385, in _query_wordhippo
+    for href_link in table_row.find('a', href=True):
+
+2023-08-21 22:06:15:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-08-21 22:06:15:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-08-21 22:06:15:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/one
+2023-08-21 22:06:15:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-08-21 22:06:16:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-08-21 22:06:16:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-08-21 22:06:17:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-08-21 22:06:17:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-07 20:57:32:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word No
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/No
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-07 20:57:45:wordhoard.utilities.request_html:ERROR: Response Status Code: 404
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: The HTTP 404 Not Found status code means that the file or page that the was requested was not found on the server
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: Requested URL: https://www.synonym.com/synonyms/No
+2023-09-07 20:57:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-07 20:57:45:wordhoard.synonyms:INFO: Synonym.com had no synonym reference for the word No
+2023-09-07 20:57:45:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-07 20:57:46:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-07 20:57:48:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-07 20:57:48:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-07 20:57:51:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-07 20:57:51:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\blogapi\Lib\site-packages\wordhoard\synonyms.py", line 314, in _query_collins_dictionary
+    if fresh_soup.find('span', {'class': 'headerSensePos'}):
+       ^^^^^^^^^^^^^^^
+
+2023-09-10 15:44:27:wordhoard.antonyms:ERROR: A TypeError occurred in the following code segment:
+2023-09-10 15:44:27:wordhoard.antonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\antonyms.py", line 385, in _query_wordhippo
+    for href_link in table_row.find('a', href=True):
+
+2023-09-10 15:44:28:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word one
+2023-09-10 15:44:38:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:44:38:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:44:38:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/one
+2023-09-10 15:44:38:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:44:52:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:44:52:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:44:55:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:44:55:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-09-10 15:44:55:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/one
+2023-09-10 15:44:55:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:44:55:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:44:55:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 329, in _query_collins_dictionary
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:44:57:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:44:57:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:45:25:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word one
+2023-09-10 15:45:26:wordhoard.antonyms:ERROR: A TypeError occurred in the following code segment:
+2023-09-10 15:45:26:wordhoard.antonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\antonyms.py", line 385, in _query_wordhippo
+    for href_link in table_row.find('a', href=True):
+
+2023-09-10 15:48:26:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word no
+2023-09-10 15:48:30:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:48:30:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:48:32:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:48:32:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:48:32:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/no
+2023-09-10 15:48:32:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:48:33:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:48:33:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:48:39:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:48:39:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 314, in _query_collins_dictionary
+    if fresh_soup.find('span', {'class': 'headerSensePos'}):
+       ^^^^^^^^^^^^^^^
+
+2023-09-10 15:50:29:wordhoard.antonyms:ERROR: A TypeError occurred in the following code segment:
+2023-09-10 15:50:29:wordhoard.antonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\antonyms.py", line 385, in _query_wordhippo
+    for href_link in table_row.find('a', href=True):
+
+2023-09-10 15:50:35:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word rest
+2023-09-10 15:50:45:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:50:45:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:50:46:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:50:46:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:50:48:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:50:48:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:50:48:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/rest
+2023-09-10 15:50:48:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:50:53:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:50:53:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 314, in _query_collins_dictionary
+    if fresh_soup.find('span', {'class': 'headerSensePos'}):
+       ^^^^^^^^^^^^^^^
+
+2023-09-10 15:51:55:wordhoard.antonyms:ERROR: A TypeError occurred in the following code segment:
+2023-09-10 15:51:55:wordhoard.antonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\antonyms.py", line 385, in _query_wordhippo
+    for href_link in table_row.find('a', href=True):
+
+2023-09-10 15:51:55:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word less
+2023-09-10 15:52:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:52:04:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:52:04:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/less
+2023-09-10 15:52:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:52:08:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:52:08:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:52:10:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:52:10:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-09-10 15:52:10:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/less
+2023-09-10 15:52:10:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:52:10:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:52:10:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 329, in _query_collins_dictionary
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:52:10:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:52:10:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:54:08:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word me
+2023-09-10 15:54:12:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:54:12:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:54:12:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/me
+2023-09-10 15:54:12:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:54:12:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:54:12:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:54:22:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:54:22:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 314, in _query_collins_dictionary
+    if fresh_soup.find('span', {'class': 'headerSensePos'}):
+       ^^^^^^^^^^^^^^^
+
+2023-09-10 15:54:44:wordhoard.antonyms:INFO: Thesaurus.com had no antonym reference for the word less
+2023-09-10 15:54:48:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:54:48:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-09-10 15:54:48:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/less
+2023-09-10 15:54:48:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-09-10 15:54:48:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:54:48:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+                     ^^^^^^^^^^^^^^^^^^^
+
+2023-09-10 15:54:49:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-09-10 15:54:49:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+
+2023-09-10 15:55:04:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-09-10 15:55:04:wordhoard.synonyms:ERROR:   File "C:\Users\Craennie\.conda\envs\DictionaryAPI\Lib\site-packages\wordhoard\synonyms.py", line 314, in _query_collins_dictionary
+    if fresh_soup.find('span', {'class': 'headerSensePos'}):
+       ^^^^^^^^^^^^^^^
+

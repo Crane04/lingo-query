@@ -66,6 +66,7 @@ button.addEventListener("click", function(){
 1.  Review the spelling of the searched word.
 2. Ensure proper Internet Connection.
 3. If problem persists after all these, please contact the developers @mayowayusuf04@gmail.com`))
+
 })
 
 // function playM(){
