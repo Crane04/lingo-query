@@ -8,15 +8,6 @@ import eng_to_ipa as phonetics
 import nltk
 from nltk.corpus import wordnet
 
-# Create your views here.
-@api_view(["GET"])
-def test(request):
-    word = request.GET["word"]
-
-
-
-    return Response({'word': word, 'synonyms': list(set(synonyms))})
-
 
 
 @api_view(["GET"])
