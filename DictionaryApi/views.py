@@ -5,35 +5,73 @@ from rest_framework.response import Response
 from wordhoard import *
 from translate import Translator
 import eng_to_ipa as phonetics
-
+import nltk
+from nltk.corpus import wordnet
 
 # Create your views here.
+@api_view(["GET"])
+def test(request):
+    word = request.GET["word"]
+
+
+
+    return Response({'word': word, 'synonyms': list(set(synonyms))})
+
+
 
 @api_view(["GET"])
 def dictionary(request):
 
     try:
-        pk = request.GET.get("word")
+        word = request.GET.get("word")
 
-        phonetic = phonetics.convert(pk)
+        phonetic = phonetics.convert(word)
         dictionary = PyDictionary()
 
-        meaning = dictionary.meaning(pk)
+        meaning = dictionary.meaning(word)
 
-        antonym = Antonyms(pk)
-        antonym = antonym.find_antonyms()
+        antonyms = []
 
-        synonym = Synonyms(pk)
-        synonym = synonym.find_synonyms()
+        for syn in wordnet.synsets(word):
+            for lemma in syn.lemmas():
+                if word == lemma.name():
+                    pass
+                else:
+                    if lemma.name() in antonyms:
+                        pass
+                    else:
+                        if lemma.antonyms():
+                            antonym_name = lemma.name().replace('_', ' ')
+                            antonyms.append(antonym_name)
+                        else:
+                            pass
 
-        hypernym = Hypernyms(pk)
-        hypernym= hypernym.find_hypernyms()
+        synonym = []
+        for syn in wordnet.synsets(word):
+            for lemma in syn.lemmas():
+                if word == lemma.name():
+                    pass
+                else:
+                    if lemma.name() in synonym:
+                        pass
+                    else:
+                        synonym_name = lemma.name().replace('_', ' ')
+                        synonym.append(synonym_name)
+
+        hypernym = []
+        for syn in wordnet.synsets(word):
+            for hyper in syn.hypernyms():
+                hypernym_name = hyper.name().replace('_', ' ').split('.')[0]  # Replace underscores and remove .n.01
+                hypernym.append({
+                    'hypernym': hypernym_name,
+                    'definition': hyper.definition(),
+                })
 
         return Response(
             {
                 "phonetics": phonetic,
                 "meaning": meaning,
-                "antonyms": antonym,
+                "antonyms": antonyms,
                 "synonyms": synonym,
                 "hypernyms": hypernym
             }
@@ -52,7 +90,7 @@ def translator(request):
 
     translator= Translator(from_lang=from_,to_lang=to)
     translation = translator.translate(text)
-    
+
     return Response({
         "meaning": translation
     })

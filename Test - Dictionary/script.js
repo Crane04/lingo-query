@@ -12,7 +12,7 @@ const result=document.querySelector(".result")
 button.addEventListener("click", function(){
     loadstate.style.display = "block"
     // fetch("https://api.dictionaryapi.dev/api/v2/entries/en/"+inputEl.value)
-    fetch("http://127.0.0.1:8000/dictionary?word="+inputEl.value)
+    fetch("https://lingoquery.pythonanywhere.com/dictionary?word="+inputEl.value)
     .then(res=>res.json())
         .then(data=>{
 
@@ -45,9 +45,11 @@ button.addEventListener("click", function(){
             synonyms.forEach((syno, Index) => {
                 formattedSynonyms += `${Index + 1}. ${syno} <br>`
             })
-
+            console.log(hypernyms);
             hypernyms.forEach((hyper, Index) => {
-                formattedHypernyms += `${Index + 1}. ${hyper} <br>`
+                formattedHypernyms += `${Index + 1}. ${hyper.hypernym}: ${hyper.definition}<br>`
+                
+
             })
             result.style.visibility="visible"
             parts.innerHTML=`<b>Part of Speech</b>: ${partsOfSpeech}` 

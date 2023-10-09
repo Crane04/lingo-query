@@ -47,7 +47,7 @@
          if(first.value===""){
             second.value="Please, enter a text."
          }
-           let api=`http://127.0.0.1:8000/translator/?from=${firstvalue.value}&to=${secondvalue.value}&text=${first.value}`
+           let api=`https://lingoquery.pythonanywhere.com/translator?from=${firstvalue.value}&to=${secondvalue.value}&text=${first.value}`
            console.log(api);
            second.setAttribute("placeholder","Translating...")
            fetch(api).then(res=>res.json())
