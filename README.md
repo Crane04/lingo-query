@@ -31,7 +31,7 @@ To run this project locally, you will need to have Python and Django installed. 
 
 
 ```bash
-git clone https://github.com/your-username/dictionary-api.git
+git clone https://github.com/Crane04/dictionary-api.git
 cd lingo-query
 ```
 - **Set Up Virtual Environment (Optional but Recommended):**
